@@ -40,15 +40,17 @@ function validateMessage() {
 //btn.addEventListener("click", validateMessage); 
 //btn.addEventListener("click", validateName); 
 
-/*function validateEmail(email){
-    var allowed=/^([a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$)/;
+function validateEmail(){
+    var allowed=/^\(?([a-zA-Z0-9._-]{3,6})\)?@[a-zA-Z0-9.-]{5}?.([a-zA-Z]{2,4})$/;
     let x= document.forms["myForm"]["email"].value;
-    if (x!= allowed){
+    if (x.match(allowed)){
+        return true;
+    }
+    else{
         alert("Invalid email address!");
         return false;
     }
-    return allowed.test(email);
-} */
+} 
 
 function myNumber() {
     var phoneno = /^\(?([961]{3})\)?[-. ]?([0-9]{3,8})$/;
