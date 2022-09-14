@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Freelancer - Theme Preview - Start Bootstrap</title>
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="icon" type="image/icon" href="images/start-icon.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="script/script.js"></script>
     </head>
@@ -72,13 +75,12 @@
                 <div>
                     <p id="demo"></p>
                 </div>
-                <form name="myForm"  method="post">
+                <form name="myForm"  method="POST" action="connection.php">
                     <input type="text" id="name" name="name" placeholder="Full name"><br>
                     <input type="text" id="email" name="email" placeholder="Email address"><br>
                     <input type="text" id="number" name="number" placeholder="Phone number"><br>
                     <input type="text" id="message" name="message" placeholder="Message">
-                    <!--<input type="submit" value="Send" class="btn send" id="send-button"> -->
-                    <button type="button" id="send-button" class="btn send" onclick="validateMessage();validateName();myNumber();validateEmail();">Send</button>
+                    <button type="submit" id="send-button" name="submit" class="btn send" onclick="validateMessage();validateName();myNumber();validateEmail();">Send</button>
                 </form>
             </div>
         </section>
@@ -96,6 +98,3 @@
         <!-- End of footer section-->
     </body>
 </html>
-
-<!-- I know that many commits are past the deadline, I'm sorry, but this was the fastest I could implement this website,
-    (been working on it the moment we recieved it), it is still missing some features but I don't want to be any later-->
